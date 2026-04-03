@@ -32,7 +32,7 @@ Settings → Pages → Custom domain → type `ryzoai.in` → Save → tick Enfo
 | A | @ | 185.199.109.153 |
 | A | @ | 185.199.110.153 |
 | A | @ | 185.199.111.153 |
-| CNAME | www | yourusername.github.io |
+| CNAME | www | nxtgenai-io.github.io |
 
 ### Step 5 — Google Search Console
 1. Go to search.google.com/search-console
