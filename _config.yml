@@ -1,0 +1,15 @@
+# GitHub Pages Configuration for RyzoAi
+# This file tells GitHub Pages how to serve your site
+
+title: RyzoAi — WhatsApp + Instagram AI for Indian Businesses
+description: AI that automates WhatsApp, Instagram & Google Reviews for Indian businesses. Starting ₹1,499/month.
+url: "https://ryzoai.in"
+baseurl: ""
+
+# Disable Jekyll processing (serve raw HTML as-is)
+plugins: []
+
+# Exclude files from being served
+exclude:
+  - README.md
+  - "*.sh"
