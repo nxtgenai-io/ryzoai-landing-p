@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — WhatsApp Automation Tips for Indian Businesses | RyzoAi</title>
+<meta name="description" content="Practical guides, tutorials and tips on WhatsApp automation, Instagram marketing, and AI tools for Indian small businesses. Learn how to grow your MSME with AI.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ryzoai.in/blog">
+<meta property="og:title" content="Blog — WhatsApp Automation & AI Tips for Indian Businesses | RyzoAi">
+<meta property="og:description" content="Practical guides on WhatsApp Business API, Instagram automation, Google Reviews, and AI tools for Indian MSMEs.">
+<meta property="og:url" content="https://ryzoai.in/blog">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ryzoai.in/og-blog.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Blog","name":"RyzoAi Blog","url":"https://ryzoai.in/blog","description":"WhatsApp automation tips and AI guides for Indian businesses","publisher":{"@type":"Organization","name":"RyzoAi","url":"https://ryzoai.in","logo":{"@type":"ImageObject","url":"https://ryzoai.in/logo.png"}}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+:root{--g:#00e87a;--g2:#00c264;--ink:#04080a;--s1:#080e10;--s2:#0c1417;--s3:#101b1f;--edge:rgba(255,255,255,0.07);--edge2:rgba(255,255,255,0.04);--text:#ccdfe6;--muted:rgba(180,210,220,0.42);--white:#f0f8fb;--r:14px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--ink);color:var(--text);font-size:16px;line-height:1.7;overflow-x:hidden}
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:999;opacity:.4}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 5%;background:rgba(4,8,10,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--edge)}
+.nl{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nlm{width:26px;height:26px;background:var(--g);border-radius:7px;display:grid;place-items:center;font-size:.8rem;font-weight:800;color:#000}
+.nlt{font-family:'Bricolage Grotesque',sans-serif;font-size:1.05rem;font-weight:700;color:var(--white)}
+.nlt span{color:var(--g)}
+.nc{display:flex;gap:24px;list-style:none}
+.nc a{color:var(--muted);text-decoration:none;font-size:.85rem;transition:color .2s}
+.nc a:hover,.nc a.active{color:var(--white)}
+.nb{background:var(--g);color:#000;font-weight:700;font-size:.82rem;padding:9px 22px;border-radius:100px;text-decoration:none;transition:background .2s,transform .15s}
+.nb:hover{background:#00ffaa;transform:translateY(-1px)}
+/* HERO */
+.blog-hero{padding:110px 5% 56px;border-bottom:1px solid var(--edge);position:relative;overflow:hidden}
+.blog-hero::before{content:'';position:absolute;top:-20%;left:50%;transform:translateX(-50%);width:800px;height:500px;background:radial-gradient(ellipse,rgba(0,232,122,.06) 0%,transparent 65%);pointer-events:none}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,232,122,.07);border:1px solid rgba(0,232,122,.2);color:var(--g);font-size:.7rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:20px}
+.dot{width:5px;height:5px;border-radius:50%;background:var(--g);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.blog-hero h1{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:800;color:var(--white);letter-spacing:-.5px;margin-bottom:12px}
+.blog-hero h1 span{color:var(--g)}
+.blog-hero p{color:var(--muted);font-size:.95rem;max-width:500px;font-weight:300}
+/* LAYOUT */
+.blog-wrap{max-width:1180px;margin:0 auto;padding:56px 5% 80px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start}
+/* FILTERS */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:40px}
+.filter-btn{background:rgba(255,255,255,.04);border:1px solid var(--edge);color:var(--muted);font-size:.78rem;font-weight:600;padding:6px 16px;border-radius:100px;cursor:pointer;transition:all .2s;letter-spacing:.3px}
+.filter-btn:hover,.filter-btn.active{background:rgba(0,232,122,.1);border-color:rgba(0,232,122,.25);color:var(--g)}
+/* FEATURED POST */
+.featured-post{background:var(--s1);border:1px solid var(--edge);border-radius:18px;overflow:hidden;margin-bottom:32px;transition:border-color .2s,transform .2s;text-decoration:none;display:block}
+.featured-post:hover{border-color:rgba(0,232,122,.3);transform:translateY(-2px)}
+.fp-img{height:240px;background:linear-gradient(135deg,#0c1f17 0%,#071510 50%,#0a1c14 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.fp-img-pattern{position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(0,232,122,.04) 40px),repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(0,232,122,.04) 40px)}
+.fp-emoji{font-size:4rem;position:relative;z-index:1}
+.fp-body{padding:28px 32px 32px}
+.fp-cat{font-size:.68rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--g);margin-bottom:12px}
+.fp-title{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(1.2rem,2vw,1.6rem);font-weight:800;color:var(--white);line-height:1.25;margin-bottom:12px}
+.fp-excerpt{color:var(--muted);font-size:.88rem;line-height:1.75;margin-bottom:20px}
+.fp-meta{display:flex;align-items:center;gap:16px;font-size:.75rem;color:rgba(180,210,220,.3)}
+.fp-meta span{display:flex;align-items:center;gap:5px}
+/* POST GRID */
+.post-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.post-card{background:var(--s1);border:1px solid var(--edge);border-radius:var(--r);overflow:hidden;transition:border-color .2s,transform .2s;text-decoration:none;display:flex;flex-direction:column}
+.post-card:hover{border-color:rgba(0,232,122,.25);transform:translateY(-2px)}
+.pc-img{height:120px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;font-size:2.5rem}
+.pc-img-1{background:linear-gradient(135deg,#0a1c14,#071510)}
+.pc-img-2{background:linear-gradient(135deg,#12100a,#0a0e1a)}
+.pc-img-3{background:linear-gradient(135deg,#0a1018,#07101a)}
+.pc-img-4{background:linear-gradient(135deg,#140a14,#0e0710)}
+.pc-img-5{background:linear-gradient(135deg,#10140a,#0e1407)}
+.pc-img-6{background:linear-gradient(135deg,#0a1414,#071414)}
+.pc-img-pattern{position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,transparent,transparent 9px,rgba(255,255,255,.015) 10px)}
+.pc-body{padding:18px 20px 20px;flex:1;display:flex;flex-direction:column}
+.pc-cat{font-size:.65rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--g);margin-bottom:8px}
+.pc-title{font-family:'Bricolage Grotesque',sans-serif;font-size:.95rem;font-weight:700;color:var(--white);line-height:1.3;margin-bottom:8px;flex:1}
+.pc-meta{font-size:.72rem;color:rgba(180,210,220,.28);margin-top:auto}
+/* SIDEBAR */
+.sidebar{position:sticky;top:80px}
+.sidebar-card{background:var(--s1);border:1px solid var(--edge);border-radius:var(--r);padding:24px;margin-bottom:20px}
+.sidebar-card h3{font-family:'Bricolage Grotesque',sans-serif;font-size:.85rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+.sidebar-cta{background:linear-gradient(135deg,rgba(0,232,122,.08),rgba(0,194,100,.04));border:1px solid rgba(0,232,122,.18);border-radius:var(--r);padding:24px;margin-bottom:20px;text-align:center}
+.sidebar-cta p{color:var(--muted);font-size:.82rem;line-height:1.7;margin-bottom:16px}
+.sidebar-cta a{display:block;background:var(--g);color:#000;font-weight:700;font-size:.82rem;padding:11px 20px;border-radius:100px;text-decoration:none;transition:background .2s}
+.sidebar-cta a:hover{background:#00ffaa}
+.pop-list{display:flex;flex-direction:column;gap:12px}
+.pop-item{display:flex;gap:12px;align-items:flex-start;text-decoration:none;transition:opacity .2s}
+.pop-item:hover{opacity:.75}
+.pop-num{font-family:'Bricolage Grotesque',sans-serif;font-size:1.2rem;font-weight:800;color:rgba(0,232,122,.2);width:24px;flex-shrink:0;line-height:1}
+.pop-title{font-size:.82rem;color:var(--text);line-height:1.4;font-weight:500}
+.tag-cloud{display:flex;flex-wrap:wrap;gap:7px}
+.tag{background:rgba(255,255,255,.04);border:1px solid var(--edge);color:var(--muted);font-size:.72rem;padding:4px 12px;border-radius:100px;text-decoration:none;transition:all .2s}
+.tag:hover{background:rgba(0,232,122,.07);border-color:rgba(0,232,122,.2);color:var(--g)}
+/* FOOTER */
+footer{border-top:1px solid var(--edge);padding:50px 5% 30px}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.fb-desc{font-size:.82rem;color:var(--muted);margin-top:12px;line-height:1.8;max-width:240px}
+.fc-col h4{font-size:.68rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+.fc-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.fc-col ul a{color:rgba(180,210,220,.35);text-decoration:none;font-size:.83rem;transition:color .2s}
+.fc-col ul a:hover{color:var(--text)}
+.fb{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;border-top:1px solid var(--edge);padding-top:24px;font-size:.75rem;color:rgba(180,210,220,.3)}
+.fb span{color:var(--g)}
+@media(max-width:1000px){.blog-wrap{grid-template-columns:1fr}.sidebar{position:static}.post-grid{grid-template-columns:1fr}}
+@media(max-width:700px){.nc{display:none}.fp-body{padding:20px 22px 24px}.post-grid{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.fg{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nl">
+    <div class="nlm">↗</div>
+    <span class="nlt">Ryzo<span>Ai</span></span>
+  </a>
+  <ul class="nc">
+    <li><a href="/#features">Features</a></li>
+    <li><a href="/#pricing">Pricing</a></li>
+    <li><a href="/blog" class="active">Blog</a></li>
+    <li><a href="/#compare">Compare</a></li>
+  </ul>
+  <a href="/#pricing" class="nb">Start Free Trial</a>
+</nav>
+
+<div class="blog-hero">
+  <div class="badge"><span class="dot"></span> Updated Weekly</div>
+  <h1>WhatsApp AI Automation <span>Blog</span></h1>
+  <p>Practical guides, case studies, and tips to grow your Indian business with WhatsApp automation, AI chatbots, and Instagram marketing.</p>
+</div>
+
+<div class="blog-wrap">
+  <main>
+    <div class="filters">
+      <button class="filter-btn active">All Articles</button>
+      <button class="filter-btn">WhatsApp</button>
+      <button class="filter-btn">Instagram</button>
+      <button class="filter-btn">Google Reviews</button>
+      <button class="filter-btn">AI Chatbots</button>
+      <button class="filter-btn">Case Studies</button>
+      <button class="filter-btn">Pricing & ROI</button>
+    </div>
+
+    <!-- FEATURED POST -->
+    <a href="/blog/whatsapp-automation-small-business-india" class="featured-post">
+      <div class="fp-img">
+        <div class="fp-img-pattern"></div>
+        <div class="fp-emoji">📱</div>
+      </div>
+      <div class="fp-body">
+        <div class="fp-cat">⭐ Featured · WhatsApp Automation</div>
+        <h2 class="fp-title">WhatsApp Automation for Small Business in India: The Complete 2026 Guide</h2>
+        <p class="fp-excerpt">Learn exactly how Indian MSMEs — salons, gyms, clinics, coaching centers, restaurants — are using WhatsApp Business API and AI chatbots to reply to 100% of customer messages automatically, book appointments, collect UPI payments, and grow revenue without hiring extra staff.</p>
+        <div class="fp-meta">
+          <span>📅 April 4, 2026</span>
+          <span>⏱ 12 min read</span>
+          <span>🏷 WhatsApp · India · MSMEs</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- POST GRID -->
+    <div class="post-grid">
+      <a href="/blog/whatsapp-chatbot-salon-india" class="post-card">
+        <div class="pc-img pc-img-1"><div class="pc-img-pattern"></div>💇</div>
+        <div class="pc-body">
+          <div class="pc-cat">Case Study · Salons</div>
+          <div class="pc-title">How a Patna Salon Booked 40 Extra Appointments/Month with WhatsApp AI</div>
+          <div class="pc-meta">Apr 3 · 7 min</div>
+        </div>
+      </a>
+      <a href="/blog/whatsapp-api-vs-whatsapp-business-app" class="post-card">
+        <div class="pc-img pc-img-2"><div class="pc-img-pattern"></div>⚡</div>
+        <div class="pc-body">
+          <div class="pc-cat">Guide · WhatsApp API</div>
+          <div class="pc-title">WhatsApp Business API vs WhatsApp Business App: Which One for Indian SMEs in 2026?</div>
+          <div class="pc-meta">Apr 2 · 9 min</div>
+        </div>
+      </a>
+      <a href="/blog/google-reviews-automation-india" class="post-card">
+        <div class="pc-img pc-img-3"><div class="pc-img-pattern"></div>⭐</div>
+        <div class="pc-body">
+          <div class="pc-cat">Guide · Google Reviews</div>
+          <div class="pc-title">How to Get More Google Reviews for Your Business in India (Automated 2026)</div>
+          <div class="pc-meta">Mar 30 · 8 min</div>
+        </div>
+      </a>
+      <a href="/blog/instagram-dm-automation-india" class="post-card">
+        <div class="pc-img pc-img-4"><div class="pc-img-pattern"></div>📸</div>
+        <div class="pc-body">
+          <div class="pc-cat">Guide · Instagram</div>
+          <div class="pc-title">Instagram DM Automation for Indian Businesses: Turn Comments into Sales Automatically</div>
+          <div class="pc-meta">Mar 28 · 6 min</div>
+        </div>
+      </a>
+      <a href="/blog/upi-payment-whatsapp-automation" class="post-card">
+        <div class="pc-img pc-img-5"><div class="pc-img-pattern"></div>💳</div>
+        <div class="pc-body">
+          <div class="pc-cat">Guide · Payments</div>
+          <div class="pc-title">How to Send UPI Payment Links on WhatsApp Automatically to Indian Customers</div>
+          <div class="pc-meta">Mar 25 · 5 min</div>
+        </div>
+      </a>
+      <a href="/blog/whatsapp-automation-cost-india" class="post-card">
+        <div class="pc-img pc-img-6"><div class="pc-img-pattern"></div>💰</div>
+        <div class="pc-body">
+          <div class="pc-cat">Pricing · ROI</div>
+          <div class="pc-title">WhatsApp Automation Cost in India 2026: How Much Does It Really Cost?</div>
+          <div class="pc-meta">Mar 22 · 7 min</div>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-cta">
+      <div style="font-size:2rem;margin-bottom:12px">🤖</div>
+      <p style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;color:var(--white);font-size:.95rem;margin-bottom:8px">Try RyzoAi Free</p>
+      <p>7-day free trial. No credit card. WhatsApp automation live in 30 minutes.</p>
+      <a href="/#pricing">Start Free Trial →</a>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>Popular This Week</h3>
+      <div class="pop-list">
+        <a href="/blog/whatsapp-automation-small-business-india" class="pop-item">
+          <span class="pop-num">01</span>
+          <span class="pop-title">WhatsApp Automation for Small Business India 2026</span>
+        </a>
+        <a href="/blog/whatsapp-api-vs-whatsapp-business-app" class="pop-item">
+          <span class="pop-num">02</span>
+          <span class="pop-title">WhatsApp API vs WhatsApp Business App: Full Comparison</span>
+        </a>
+        <a href="/blog/google-reviews-automation-india" class="pop-item">
+          <span class="pop-num">03</span>
+          <span class="pop-title">How to Get More Google Reviews Automatically in India</span>
+        </a>
+        <a href="/blog/whatsapp-chatbot-salon-india" class="pop-item">
+          <span class="pop-num">04</span>
+          <span class="pop-title">WhatsApp Chatbot for Salon: Patna Case Study</span>
+        </a>
+        <a href="/blog/upi-payment-whatsapp-automation" class="pop-item">
+          <span class="pop-num">05</span>
+          <span class="pop-title">Send UPI Links on WhatsApp Automatically</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>Browse by Topic</h3>
+      <div class="tag-cloud">
+        <a href="#" class="tag">WhatsApp API</a>
+        <a href="#" class="tag">Instagram DMs</a>
+        <a href="#" class="tag">AI Chatbot</a>
+        <a href="#" class="tag">Google Reviews</a>
+        <a href="#" class="tag">UPI Payments</a>
+        <a href="#" class="tag">Salons</a>
+        <a href="#" class="tag">Clinics</a>
+        <a href="#" class="tag">Coaching</a>
+        <a href="#" class="tag">Restaurants</a>
+        <a href="#" class="tag">Gyms</a>
+        <a href="#" class="tag">Appointments</a>
+        <a href="#" class="tag">Lead Gen</a>
+        <a href="#" class="tag">Hindi</a>
+        <a href="#" class="tag">Meta API</a>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="fg">
+    <div>
+      <a href="/" class="nl" style="text-decoration:none">
+        <div class="nlm">↗</div>
+        <span class="nlt">Ryzo<span>Ai</span></span>
+      </a>
+      <p class="fb-desc">India's first multi-channel AI Revenue OS for WhatsApp, Instagram, and Google Reviews. Built for India's 63 million MSMEs.</p>
+    </div>
+    <div class="fc-col">
+      <h4>Product</h4>
+      <ul><li><a href="/#features">Features</a></li><li><a href="/#pricing">Pricing</a></li><li><a href="/#compare">Compare</a></li><li><a href="/#how">How It Works</a></li></ul>
+    </div>
+    <div class="fc-col">
+      <h4>Blog</h4>
+      <ul><li><a href="/blog">All Articles</a></li><li><a href="/blog/whatsapp-automation-small-business-india">WhatsApp Guide</a></li><li><a href="/blog/google-reviews-automation-india">Google Reviews</a></li></ul>
+    </div>
+    <div class="fc-col">
+      <h4>Legal</h4>
+      <ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/terms">Terms of Service</a></li></ul>
+    </div>
+  </div>
+  <div class="fb">
+    <div>© 2026 <span>RyzoAi</span>. Made in India. All rights reserved.</div>
+    <div>Meta Verified · WhatsApp Cloud API Partner · India MSME Blog</div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.filter-btn').forEach(b=>{
+  b.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active')});
+});
+window.addEventListener('scroll',()=>{document.querySelector('nav').classList.toggle('on',scrollY>30)});
+</script>
+</body>
+</html>
