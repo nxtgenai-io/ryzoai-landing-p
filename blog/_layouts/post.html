@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page.title }} — RyzoAi Blog</title>
+<meta name="description" content="{{ page.description }}">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta name="robots" content="index, follow">
+<meta name="author" content="RyzoAi">
+
+<!-- Schema: BlogPosting -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title }}",
+  "description": "{{ page.description }}",
+  "author": {"@type": "Organization", "name": "RyzoAi", "url": "https://ryzoai.in"},
+  "publisher": {"@type": "Organization", "name": "RyzoAi", "logo": {"@type": "ImageObject", "url": "https://ryzoai.in/logo.png"}},
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "{{ page.url | absolute_url }}"}
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+
+<style>
+:root{--g:#00e87a;--ink:#04080a;--s1:#080e10;--edge:rgba(255,255,255,0.07);--text:#ccdfe6;--muted:rgba(180,210,220,0.42);--white:#f0f8fb;--r:14px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--ink);color:var(--text);font-size:17px;line-height:1.8}
+a{color:var(--g);text-decoration:none}a:hover{text-decoration:underline}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 5%;background:rgba(4,8,10,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--edge)}
+.nl{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nlm{width:26px;height:26px;background:var(--g);border-radius:7px;display:grid;place-items:center;font-size:.8rem;font-weight:800;color:#000}
+.nlt{font-family:'Bricolage Grotesque',sans-serif;font-size:1.05rem;font-weight:700;color:var(--white)}
+.nlt span{color:var(--g)}
+.nb{background:var(--g);color:#000;font-weight:700;font-size:.82rem;padding:9px 22px;border-radius:100px;text-decoration:none;transition:background .2s}
+.nb:hover{background:#00ffaa;text-decoration:none}
+
+.article{max-width:720px;margin:100px auto 60px;padding:0 5%}
+.article-meta{font-size:.8rem;color:var(--muted);margin-bottom:8px}
+.article h1{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(2rem,4vw,2.8rem);font-weight:800;color:var(--white);line-height:1.15;letter-spacing:-1px;margin-bottom:24px}
+.article h2{font-family:'Bricolage Grotesque',sans-serif;font-size:1.5rem;font-weight:700;color:var(--white);margin:40px 0 14px;letter-spacing:-.3px}
+.article h3{font-size:1.15rem;font-weight:600;color:var(--white);margin:30px 0 10px}
+.article p{margin-bottom:18px;color:var(--text);line-height:1.85}
+.article ul,.article ol{margin:0 0 18px 24px;color:var(--text)}
+.article li{margin-bottom:8px}
+.article strong{color:var(--white)}
+.article blockquote{border-left:3px solid var(--g);padding:12px 20px;margin:18px 0;background:rgba(0,232,122,.04);border-radius:0 var(--r) var(--r) 0}
+.article code{background:rgba(255,255,255,.06);padding:2px 6px;border-radius:4px;font-size:.9em}
+.article img{max-width:100%;border-radius:var(--r);margin:18px 0}
+
+.article-cta{background:rgba(0,232,122,.05);border:1px solid rgba(0,232,122,.15);border-radius:var(--r);padding:28px;text-align:center;margin:40px 0}
+.article-cta p{color:var(--muted);margin-bottom:14px}
+.article-cta .nb{display:inline-block;font-size:.9rem;padding:12px 28px}
+
+footer{border-top:1px solid var(--edge);padding:30px 5%;text-align:center;font-size:.78rem;color:rgba(180,210,220,.3)}
+footer span{color:var(--g)}
+</style>
+</head>
+<body>
+<nav>
+  <a href="/" class="nl"><div class="nlm">↗</div><span class="nlt">Ryzo<span>Ai</span></span></a>
+  <div style="display:flex;align-items:center;gap:14px">
+    <a href="/blog" style="color:var(--muted);font-size:.85rem">Blog</a>
+    <a href="https://app.ryzoai.in/signup" class="nb">Start Free Trial</a>
+  </div>
+</nav>
+
+<article class="article">
+  <div class="article-meta">{{ page.date | date: "%B %d, %Y" }} · {{ page.category | default: "RyzoAi" }}</div>
+  <h1>{{ page.title }}</h1>
+  {{ content }}
+
+  <div class="article-cta">
+    <p><strong>Ready to automate your business?</strong></p>
+    <p>RyzoAi handles your WhatsApp, Instagram, and Google Reviews — 24/7.</p>
+    <a href="https://app.ryzoai.in/signup" class="nb">Start My Free 7-Day Trial →</a>
+  </div>
+</article>
+
+<footer>
+  <p>© 2026 <span>RyzoAi</span>. Made in India. <a href="/" style="color:var(--g)">Back to Home</a></p>
+</footer>
+</body>
+</html>

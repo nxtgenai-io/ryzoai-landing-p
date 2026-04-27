@@ -1,7 +1,9 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://ryzoai.in/sitemap.xml
 
+# Allow all crawlers to index all pages
 User-agent: Googlebot
 Allow: /
 
