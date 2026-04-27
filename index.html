@@ -208,7 +208,7 @@ nav.on{background:rgba(4,8,10,.92);backdrop-filter:blur(20px);border-color:var(-
 .hglow{position:absolute;top:-10%;left:50%;transform:translateX(-50%);width:900px;height:600px;background:radial-gradient(ellipse,rgba(0,232,122,.1) 0%,transparent 65%);pointer-events:none}
 
 .pill{display:inline-flex;align-items:center;gap:8px;background:rgba(0,232,122,.07);border:1px solid rgba(0,232,122,.2);color:var(--g);font-size:.72rem;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;padding:6px 16px;border-radius:100px;margin-bottom:36px;position:relative;z-index:2;animation:fd .8s ease both}
-.dot{width:6px;height:6px;border-radius:50%;background:var(--g);animation:pulse 2s infinite}
+.dot{width:6px;height:6px;border-radius:50%;background:#ff4444;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
 
 h1{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(2.6rem,6vw,5.6rem);font-weight:800;line-height:1.04;letter-spacing:-2px;color:var(--white);max-width:860px;margin-bottom:24px;position:relative;z-index:2;animation:fd .8s .1s ease both}
@@ -288,7 +288,7 @@ h2 em{font-style:italic;color:var(--g);font-weight:600}
 .ch-badge.gg{background:rgba(66,133,244,.08);color:#4285f4;border:1px solid rgba(66,133,244,.2)}
 
 /* SEGMENTS */
-.seg-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:50px}
+.seg-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:50px}
 .seg{border:1px solid var(--edge);border-radius:var(--r2);padding:20px 14px;text-align:center;background:var(--s1);transition:border-color .3s}
 .seg:hover{border-color:rgba(0,232,122,.2)}
 .seg-e{font-size:1.6rem;margin-bottom:10px}
@@ -444,7 +444,7 @@ footer{border-top:1px solid var(--edge);padding:60px 5% 36px}
   .prob-grid{grid-template-columns:1fr}
   .feat-grid{grid-template-columns:1fr 1fr}
   .ch-grid{grid-template-columns:1fr}
-  .seg-grid{grid-template-columns:repeat(3,1fr)}
+  .seg-grid{grid-template-columns:repeat(4,1fr)}
   .roi-grid{grid-template-columns:1fr 1fr}
   .price-grid{grid-template-columns:1fr}
   .fin-wrap,.fin-proj,.milestones{grid-column:span 1}
@@ -459,7 +459,7 @@ footer{border-top:1px solid var(--edge);padding:60px 5% 36px}
 }
 @media(max-width:600px){
   .feat-grid{grid-template-columns:1fr}
-  .seg-grid{grid-template-columns:1fr 1fr}
+  .seg-grid{grid-template-columns:repeat(3,1fr)}
   .roi-grid{grid-template-columns:1fr}
   h1{letter-spacing:-1px}
   .fg{grid-template-columns:1fr}
@@ -494,7 +494,7 @@ footer{border-top:1px solid var(--edge);padding:60px 5% 36px}
 
   <div class="pill"><span class="dot"></span> Now Live — Meta Verified Business · India's AI Revenue OS</div>
 
-  <h1>Your business runs itself<br>on <span class="green">WhatsApp</span> <span class="italic">&</span> <span class="green">Instagram</span></h1>
+  <h1>Your business runs itself<br><span class="green italic">while you sleep</span></h1>
 
   <p class="hsub">RyzoAi's AI replies to every customer instantly, books appointments, collects UPI payments, and grows your Google ranking — all on autopilot. No staff needed. No technical skills required.</p>
 
@@ -747,32 +747,30 @@ footer{border-top:1px solid var(--edge);padding:60px 5% 36px}
   <div class="w">
     <div class="rv" style="text-align:center">
       <div class="lbl" style="text-align:center">Who It's For</div>
-      <h2 style="text-align:center">Built for <em>5 types</em> of Indian businesses</h2>
+      <h2 style="text-align:center">Built for <em>every type</em> of Indian business</h2>
+      <p class="sub" style="margin:0 auto;text-align:center">If your business talks to customers on WhatsApp â€” RyzoAi is built for you. From solo professionals to multi-location chains.</p>
     </div>
-    <div class="seg-grid">
-      <div class="seg rv"><div class="seg-e">💇</div><div class="seg-n">Salons & Beauty</div><div class="seg-roi">5×</div><div class="seg-rl">ROI — ₹7,500/mo extra</div></div>
-      <div class="seg rv"><div class="seg-e">📚</div><div class="seg-n">Coaching Centers</div><div class="seg-roi">6.7×</div><div class="seg-rl">ROI — ₹10,000/mo extra</div></div>
-      <div class="seg rv"><div class="seg-e">💪</div><div class="seg-n">Gyms & Fitness</div><div class="seg-roi">10×</div><div class="seg-rl">ROI — ₹15,000/mo extra</div></div>
-      <div class="seg rv"><div class="seg-e">🏥</div><div class="seg-n">Clinics & Doctors</div><div class="seg-roi">4.3×</div><div class="seg-rl">ROI — ₹6,400/mo extra</div></div>
-      <div class="seg rv"><div class="seg-e">🍽️</div><div class="seg-n">Restaurants</div><div class="seg-roi">High</div><div class="seg-rl">High message volume = high AI value</div></div>
-    </div>
-    <div class="roi-grid" style="margin-top:24px">
-      <div class="roi-card rv">
-        <div class="roi-head"><div class="roi-biz">💇 Salon in Patna</div><div class="roi-cost">Cost: ₹1,499/month</div></div>
-        <div class="roi-body"><div class="roi-num">₹7,500</div><div class="roi-rev">extra revenue per month</div><div class="roi-how">15 extra bookings/month × ₹500. AI books 24/7, sends reminders, auto-replies to Google Reviews with "best salon in Patna" — boosting Maps ranking.</div></div>
-      </div>
-      <div class="roi-card rv">
-        <div class="roi-head"><div class="roi-biz">🏥 Doctor's Clinic</div><div class="roi-cost">Cost: ₹1,499/month</div></div>
-        <div class="roi-body"><div class="roi-num">₹6,400</div><div class="roi-rev">extra revenue per month</div><div class="roi-how">8 extra appointments × ₹800. Patients book after hours, get reminders, Google Reviews AI-replies improve Local Pack ranking.</div></div>
-      </div>
-      <div class="roi-card rv">
-        <div class="roi-head"><div class="roi-biz">📚 Coaching Center</div><div class="roi-cost">Cost: ₹1,499/month</div></div>
-        <div class="roi-body"><div class="roi-num">₹10,000</div><div class="roi-rev">extra revenue per month</div><div class="roi-how">5 new enrollments × ₹2,000. AI handles parent inquiries on WhatsApp + Instagram, schedules free demo sessions automatically.</div></div>
-      </div>
-      <div class="roi-card rv">
-        <div class="roi-head"><div class="roi-biz">💪 Gym</div><div class="roi-cost">Cost: ₹1,499/month</div></div>
-        <div class="roi-body"><div class="roi-num">₹15,000</div><div class="roi-rev">extra revenue per month</div><div class="roi-how">10 renewals saved × ₹1,500. Automated renewal reminders, class bookings, CTWA ad capture from Facebook gym ads.</div></div>
-      </div>
+    <div class="seg-grid" style="grid-template-columns:repeat(5,1fr)">
+      <div class="seg rv"><div class="seg-e">&#x1F487;</div><div class="seg-n">Salons &amp; Spas</div></div>
+      <div class="seg rv"><div class="seg-e">&#x1F3CB;</div><div class="seg-n">Gyms &amp; Fitness</div></div>
+      <div class="seg rv"><div class="seg-e">&#x1F3E5;</div><div class="seg-n">Hospitals</div></div>
+      <div class="seg rv"><div class="seg-e">&#x1FA7A;</div><div class="seg-n">Doctors &amp; Clinics</div></div>
+      <div class="seg rv"><div class="seg-e">&#x1F9EA;</div><div class="seg-n">Diagnostic Centres</div></div>
+      <div class="seg rv"><div class="seg-e">&#x1F4DA;</div><div class="seg-n">Coaching Centers</div></div>
+      <div class="seg rv"><div class="seg-e">&#x2615;</div><div class="seg-n">Cafes &amp; Restaurants</div></div>
+      <div class="seg rv"><div class="seg-e">&#x1F6CD;</div><div class="seg-n">General Stores</div></div>
+      <div class="seg rv"><div class="seg-e">&#x1F680;</div><div class="seg-n">Entrepreneurs</div></div>
+      <div class="seg rv"><div class="seg-e">&#x1F4BB;</div><div class="seg-n">Freelancers</div></div>
+      <div class="seg rv"><div class="seg-e">&#x1F3ED;</div><div class="seg-n">Manufacturers</div></div>
+      <div class="seg rv"><div class="seg-e">&#x1F3E2;</div><div class="seg-n">Agencies</div></div>
+      <div class="seg rv"><div class="seg-e">&#x1F4BC;</div><div class="seg-n">Sales Offices</div></div>
+      <div class="seg rv"><div class="seg-e">&#x1F3E0;</div><div class="seg-n">Real Estate</div></div>
+      <div class="seg rv"><div class="seg-e">&#x1F468;&#x200D;&#x1F4BC;</div><div class="seg-n">Professionals</div></div>
+      <div class="seg rv"><div class="seg-e">&#x1F6D2;</div><div class="seg-n">E-commerce</div></div>
+      <div class="seg rv"><div class="seg-e">&#x1F393;</div><div class="seg-n">Tutors &amp; Educators</div></div>
+      <div class="seg rv"><div class="seg-e">&#x2702;</div><div class="seg-n">Tailors &amp; Fashion</div></div>
+      <div class="seg rv"><div class="seg-e">&#x1F697;</div><div class="seg-n">Auto Services</div></div>
+      <div class="seg rv"><div class="seg-e">&#x2795;</div><div class="seg-n">And Many More...</div></div>
     </div>
   </div>
 </section>
@@ -1043,17 +1041,16 @@ footer{border-top:1px solid var(--edge);padding:60px 5% 36px}
   <div class="cta-glow"></div>
   <div class="w">
     <div class="cta-inner rv">
-      <div class="lbl" style="text-align:center;display:block">First 50 Founding Members Only</div>
-      <h2>₹1,499/month.<br><em>Locked forever.</em></h2>
-      <p>The founding member price disappears after 50 customers. After that, new customers pay ₹2,999/month. Lock in today, go live in 15 minutes, and let AI run your business while you focus on what matters.</p>
+      <div class="lbl" style="text-align:center;display:block">Ready to Automate?</div>
+      <h2>Let AI handle your customers<br><em>while you sleep.</em></h2>
+      <p>Go live in 15 minutes. AI replies to every WhatsApp message, books appointments, collects payments, and grows your Google ranking â€” all on autopilot. No staff needed.</p>
       <div class="cta-form">
-        <input class="cta-in" type="tel" placeholder="Your WhatsApp number">
         <a href="https://app.ryzoai.in/signup" class="btn-g">
-          Claim My Founding Spot
+          Start My Free 7-Day Trial
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </div>
-      <p class="cta-fine">7-day free trial · No credit card · Setup in 15 minutes · Cancel anytime · Meta Verified Business</p>
+      <p class="cta-fine">7-day free trial Â· No credit card Â· Setup in 15 minutes Â· Cancel anytime Â· Meta Verified Business</p>
     </div>
   </div>
 </section>
@@ -1130,5 +1127,16 @@ document.querySelectorAll('.feat-grid, .ch-grid, .seg-grid, .roi-grid, .price-gr
   });
 });
 </script>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/917250018750?text=Hi%20RyzoAi%2C%20I%27d%20like%20to%20know%20more%20about%20your%20AI%20automation" target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<style>
+.wa-float{position:fixed;bottom:24px;right:24px;width:60px;height:60px;background:#25D366;border-radius:50%;display:grid;place-items:center;z-index:500;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:transform .2s,box-shadow .2s;text-decoration:none}
+.wa-float:hover{transform:scale(1.08);box-shadow:0 6px 28px rgba(37,211,102,.5)}
+.wa-float::after{content:'Chat with us';position:absolute;right:70px;background:var(--s2,#0c1417);color:#fff;padding:6px 14px;border-radius:8px;font-size:.78rem;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}
+.wa-float:hover::after{opacity:1}
+</style>
 </body>
 </html>
