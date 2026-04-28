@@ -192,6 +192,17 @@ footer{border-top:1px solid var(--edge);padding:50px 5% 30px}
       <p><strong>Your responsibility as a business:</strong> You must obtain proper opt-in consent from your customers before sending WhatsApp messages via RyzoAi, in compliance with Meta's Messaging Policy and India's DPDP Act 2023. RyzoAi's Compliance Shield flags potential policy violations but the business owner is ultimately responsible for customer consent.</p>
     </div>
 
+    <h3>4.0.1 — Consent Record Enforcement</h3>
+    <p>RyzoAi automatically maintains <strong>timestamped consent logs</strong> for every customer interaction, as required by Meta's WhatsApp Business Platform and India's DPDP Act 2023. For each consent event, we record:</p>
+    <ul>
+      <li><strong>Timestamp:</strong> Exact date and time (ISO 8601) when consent was given or revoked</li>
+      <li><strong>Consent type:</strong> Whether the consent covers WhatsApp opt-in, marketing campaigns, transactional messages, AI-powered communications, or data processing</li>
+      <li><strong>Source:</strong> How consent was obtained — inbound customer message (implicit), keyword-based opt-in (e.g. "START"), web form, manual recording, or API webhook</li>
+      <li><strong>Contact details:</strong> Name and phone number of the individual at the time of consent</li>
+      <li><strong>Status tracking:</strong> Active, revoked, or expired — with revocation timestamps when a customer opts out</li>
+    </ul>
+    <p>Business owners can view, export, and manage all consent records from the RyzoAi dashboard. Customers can opt out at any time by replying <strong>STOP</strong> to any WhatsApp message, which automatically revokes their consent and logs the event. All consent data is retained for the duration of your subscription plus 90 days, or as required by law.</p>
+
     <h3>4.1 — AI Automation & Compliance (Meta 2026 Policy)</h3>
     <p>In compliance with Meta's WhatsApp Business Platform AI policy (effective January 15, 2026), RyzoAi operates as a <strong>purpose-driven, business-scoped</strong> AI automation tool — <strong>not</strong> a general-purpose AI assistant. Specifically:</p>
     <ul>
